@@ -1296,12 +1296,18 @@ html {
 .contents {
   display: contents;
 }
+.hidden {
+  display: none;
+}
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
 }
 .w-full {
   width: 100%;
+}
+.resize {
+  resize: both;
 }
 .flex-row {
   flex-direction: row;
@@ -1321,4 +1327,35 @@ html {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+
+@media (min-width: 640px) {
+    .screen-resolver {
+        --type: 'sm'
+    }
+}
+
+@media (min-width: 768px) {
+    .screen-resolver {
+        --type: 'md'
+    }
+}
+
+@media (min-width: 1024px) {
+    .screen-resolver {
+        --type: 'lg'
+    }
+}
+
+@media (min-width: 1280px) {
+    .screen-resolver {
+        --type: 'xl'
+    }
+}
+
+@media (min-width: 1536px) {
+    .screen-resolver {
+        --type: '2xl'
+    }
 }
